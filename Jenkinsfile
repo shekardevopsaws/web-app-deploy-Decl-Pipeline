@@ -28,11 +28,11 @@ pipeline {
             }
         }
 
-        // Uncomment this when you're ready to push to Nexus
-        // stage('Deploy artifacts to Nexus') {
-        //     steps {
-        //         sh 'mvn deploy'
-        //     }
-        // }
+        
+        stage('Deploy artifacts to Nexus') {
+            steps {
+                sh 'mvn deploy'
+            }
+        }
     }
 }
